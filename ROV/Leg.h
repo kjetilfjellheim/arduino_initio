@@ -24,14 +24,14 @@ class Leg {
 	int cal1;
 	int cal2;
 	int cal3;
-	SoftwareSerial* softSerial;
 	POSITION position;
 	SIDE side;
 public:
-	Leg(String engine1, String engine2, String engine3, SoftwareSerial* serial, POSITION position, SIDE side, int cal1, int cal2, int cal3);
-	void standStill();
+	Leg(String engine1, String engine2, String engine3, POSITION position, SIDE side, int cal1, int cal2, int cal3);
+	String standStill();
+	String lieDown();
 private:
-	void move(String engine, int p, String t);
+	String move(String engine, int p);
 };
 
 #endif /* LEG_H_ */

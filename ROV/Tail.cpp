@@ -17,22 +17,22 @@ Tail::Tail(String sidewaysEngine, String liftEngine, int calSideways, int calLif
 }
 
 void Tail::up() {
-	move(liftEngine, 500 - calLiftEngine, "1000");
-	delay(1000);
-}
-
-void Tail::down() {
 	move(liftEngine, 2500 - calLiftEngine, "1000");
 	delay(1000);
 }
 
+void Tail::down() {
+	move(liftEngine, 800 - calLiftEngine, "1000");
+	delay(1000);
+}
+
 void Tail::left() {
-	move(sidewaysEngine, 500 - calSideways, "1000");
+	move(sidewaysEngine, 1200 - calSideways, "1000");
 	delay(1000);
 }
 
 void Tail::right() {
-	move(sidewaysEngine, 2500 - calSideways, "1000");
+	move(sidewaysEngine, 2000 - calSideways, "1000");
 	delay(1000);
 }
 

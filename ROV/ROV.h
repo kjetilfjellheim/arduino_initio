@@ -17,9 +17,10 @@ extern "C" {
 void loop();
 void setup();
 void lieDown();
-void sit();
 void stand();
-void center();
+void headStraight();
+void closeClaw();
+void openClaw();
 #ifdef __cplusplus
 } // extern "C"
 #endif
